@@ -8,6 +8,6 @@ class Solution:
         map = {}
         for index in range(len(nums)):
             if nums[index] in map:
-                return [map[nums[index]], nums[index]]
+                return [map[nums[index]], index]
             else:
-                map[target - nums[index]] = nums[index]
+                map[target - nums[index]] = index
